@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --dark-color: #252B42;
+    --disabled-color: #737373;
+    --warm-color: #ffa62B;
+    --sky-color: #00A0C1;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+
+
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../images/cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    height: 104px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.logo{
+    margin-right: 117px;
+}
+.navlinks_box{
+    width: 315px;
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li:not(:last-child){
+    margin-right: 21px;
+}
+
+.hero_grid{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.desc_box{
+    height: 350px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.slogan{
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-transform: uppercase;
+}
+
+.underslogan_text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    width: 390px;
+    padding-top: 15px;
+}
+
+.buttons_container{
+    padding-top: 45px;
+    display: flex;
+    gap: 10px;
+}
+
+.desc_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 48px;
+    border-radius: 37px;
+    
+}
+
+.button1{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #FFA62B;
+    transition: 0.1s;
+}
+
+.button1:hover{
+    font-weight: 1;
+    transition-timing-function: ease-in-out;
+}
+
+.button2{
+    border: 1px solid #00A0C1;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #00A0C1;
+}
